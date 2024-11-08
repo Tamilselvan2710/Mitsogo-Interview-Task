@@ -9,6 +9,8 @@ body {
   z-index: 102;
   left: 0;
   width: 100%;
+  position: relative;
+  top: 0;
 }
 nav.sticky {
   padding: 25px 20px;
@@ -251,8 +253,8 @@ nav.sticky {
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border-color: rgb(247 247 247);
+  opacity: 1;
 }
 
 /* Style the buttons inside the tab */
@@ -268,15 +270,150 @@ nav.sticky {
   width:20%;
 }
 
+.section-accordian-content-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.section-accordian-image {
+  max-width: 545px;
+  width: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+  position: relative;
+}
+.section-accordian-dcontent {
+  max-width: 725px;
+  position: relative;
+  width: 60%;
+  padding-left: 40px;
+}
+.section-accordian-dcontent-header {
+  text-align: left;
+  font-size: 26px;
+  line-height: 40px;
+  color: rgb(2 10 25);
+  opacity: 1;
+  font-weight: 700;
+  max-width: 670px;
+}
+.section-accordian-text {
+  text-align: justify;
+  line-height: 28px;
+  font-size: 18px;
+  color: rgb(51 51 51);
+  opacity: 1;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.section-accordian-demo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(221 7 53);
+  opacity: 1;
+  padding-left: 5px;
+  font-weight: 600;
+  line-height: 23px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.section-accordian-dcontent-links {
+  text-align: left;
+}
+
+.section-accordian-text-arrow {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: .3s;
+  padding-left: 11px;
+  font-weight: 600;
+  width: 10px;
+  height: 12px;
+}
+
+.section-accordian-card-divider {
+  background-color: rgb(247 247 247);
+  opacity: 1;
+  height: 2px;
+  position: relative;
+  top: 20px;
+}
+.section-accordian-divider {
+  background-color: rgb(247 247 247);
+  opacity: 1;
+  height: 2px;
+  position: relative;
+}
+
+
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
+  background-color: rgb(247 247 247);
 }
 .tablink {
-  border-color: rgb(247 247 247);
+  width: 236px;
+  height: 80px;
+  color: rgba(2, 10, 25, .5);
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 22px;
+  transition-duration: .4s;
+}
+
+.section-tabs-content-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  animation: featuresTabSlider_animate-left__qahHQ .6s ease both running;
+  padding: 40px;
+}
+.section-tabs-dcontent {
+  text-align: left;
+  max-width: 760px;
+  padding-right: 40px;
+  width: 100%;
+}
+.section-tabs-dcontent-header {
+  font-size: 28px;
+  padding-bottom: 40px;
+  line-height: 40px;
+  color: rgb(2 10 25);
+  opacity: 1;
+  font-weight: 700;
+  max-width: 670px;
+}
+.section-tabs-image {
+  margin-bottom: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 460px;
+}
+.section-tabs-block {
+  display: block;
+  list-style: none;
+}
+.section-tabs-block-li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex: 1 1 0%;
+}
+.section-tab-text {
+  line-height: 25px;
+  font-size: 18px;
+  color: rgb(51 51 51);
+  opacity: 1;
+  font-weight: 400;
+  margin: 0;
 }
 
 .card {
@@ -495,13 +632,10 @@ nav.sticky {
   padding-left: 5px;
 }
 .section-footer-text-arrow {
-  background-image: url(https://static.hexnode.com/img/home_page/images/icons/arrow-right.svg);
-  background-repeat: no-repeat;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: .3s;
   width: 6px;
   height:10px;
-  position: absolute;
   top: 9px;
   right: 5px;
 }
@@ -595,11 +729,11 @@ nav.sticky {
 }
 
 .section-profile-card-divider {
-    background-color: rgb(247 247 247);
-    opacity: 1;
-    height: 2px;
-    position: relative;
-    top: -20px;
+  background-color: rgb(247 247 247);
+  opacity: 1;
+  height: 2px;
+  position: relative;
+  top: -20px;
 }
 .section-profile-card-text {
   padding-right: 55px;
