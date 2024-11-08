@@ -1,0 +1,120 @@
+/** Media Queries **/
+@media screen and (max-width: 768px) {
+    .banner-text-content {
+      margin-bottom: 40px;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .banner-header {
+      text-align: left;
+      line-height: 53px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .banner-header {
+      line-height: 53px;
+      font-size: 42px;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .banner-image {
+      order: 2;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .banner-image, 
+    .banner-mobile-kisok  {
+      max-width: 597px;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .nav-header {
+      padding-top: 7px;
+      padding-bottom: 2px
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .navbar-section {
+      max-width: 1300px;
+    }
+  }
+  @media screen and (max-width: 680px) {
+    .submit-form-input {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 680px) {
+    .form-input {
+      max-width: 280px;
+      margin-right: 8px;
+    }
+  }
+  @media screen and (max-width: 680px) {
+    .form-submit-button {
+      max-width: 210px;
+      margin-top: 0px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .banner-footer-content {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .banner-footer-flex {
+      margin-left: -45px;
+      margin-right: -45px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .banner-footer-flex {
+      margin-left: -25px;
+      margin-right: -25px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .banner-footer-flex {
+      justify-content: space-between;
+      flex-direction: row;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .banner-wrap-content {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .banner-wrap-content {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .banner-wrap-content {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      flex: 0 0 27%;
+      max-width: 27%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .banner-wrap-content-flex {
+      align-items: baseline;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .banner-wrap-text-content {
+      text-align: left;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .banner-divider {
+      width: 1px;
+    }
+  }
